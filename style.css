@@ -1,0 +1,333 @@
+*{
+    margin: 0px;
+}
+body{
+    background-image: url(imagens/fundo.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+#logo{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 0px auto;
+}
+#organizaTopo{
+    position: relative;
+    width: 1200px;
+    background-color: rgba(204,204,204,0.7);
+    border-radius: 0px 0px 5px 5px;
+    margin: 0px auto;
+    border-bottom:2px solid #000;
+    border-right:2px solid #000;
+    border-left:2px solid #000;
+}
+nav{
+    position: relative;
+    width: 470px;
+    height: 70px;
+    margin: 0px auto;
+}
+nav a{
+    color: black;
+    text-decoration:none;
+    font-size: 30px;
+    margin: 5px auto;
+    margin-right: 20px;
+    font-family: 'Lato', sans-serif;
+
+}
+nav a:hover{
+    text-decoration: underline #9A0606;
+}
+footer{
+    position: relative;
+    width: 100%;
+    height:200px;
+    background-color: #cccccc;
+    margin: 0px auto;
+    border-top: 2px solid #000;
+}
+#organizarodape{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0px auto;
+}
+#facebook{
+    position: relative;
+    padding-top: 10px;
+    width: 64px;
+    height: 64px;
+    margin: 0px auto;
+    float: left;
+    margin-left: 740px;
+}
+#instagram{
+    position: relative;
+    padding-top: 10px;
+    width: 64px;
+    height: 64px;
+    margin: 0px auto;
+    float: left;     
+}
+/*Inicio slider*/
+#slider {
+    position: relative;
+    width: 609px;
+    height: 420px;
+    margin: 10px auto; 
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#slider .slides {
+    padding: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+#slider .slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+#slider .slides input { display: none; }
+
+#slider .slide-container { display: block; }
+
+#slider .slide {
+    top: 0;
+    opacity: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+#slider .slide img {
+    width: 100%;
+    height: 100%;
+     border-radius: 5px;
+}
+
+#slider .nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+#slider .slide:hover + .nav label { opacity: 0.5; }
+
+#slider .nav label:hover { opacity: 1; }
+
+#slider .nav .next { right: 0; }
+
+#slider input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+#slider input:checked + .slide-container .nav label { display: block; }
+
+#slider .nav-dots {
+    width: 100%;
+    bottom: 9px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+
+#slider .nav-dots .nav-dot {
+    top: -5px;
+    width: 11px;
+    height: 11px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#slider .nav-dots .nav-dot:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#slider input#img-1:checked ~ .nav-dots label#img-dot-1,
+#slider input#img-2:checked ~ .nav-dots label#img-dot-2,
+#slider input#img-3:checked ~ .nav-dots label#img-dot-3,
+#slider input#img-4:checked ~ .nav-dots label#img-dot-4,
+#slider input#img-5:checked ~ .nav-dots label#img-dot-5,
+#slider input#img-6:checked ~ .nav-dots label#img-dot-6 {
+    background: rgba(0, 0, 0, 0.8);
+}
+#OrganizaServiços{
+    position: relative;
+    width: 1180px;
+    height: 1140px;
+    margin: 10px;
+    padding-top: 2px;
+    margin-left: 200px;
+    background-color: #cccccc;
+    border: 2px solid #000;
+    border-radius: 5px;   
+}
+#serviço1{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 20px;
+}
+#serviço2{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 20px;
+}
+#serviço3{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 20px;
+}
+.texto{
+    position: relative;
+    margin: 100px;
+    width: 600px;
+    height: 20px;
+    float: right;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+}
+#história{
+    position: relative;
+    width: 950px;
+    height: 860px;
+    margin: 15px auto;
+    padding: 20px;
+    background-color: #cccccc;
+    border: 2px solid #000;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+/*Formulário*/
+form{
+    position: relative;
+    width: 750px;
+    height: 670px;
+    margin: 10px auto;
+    padding:10px;
+    background-color: #cccccc;
+    border: 2px solid #000;
+}
+fieldset{
+    border:none;
+}
+input,select,textarea,button,form{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+.grupo:after, .grupo:before{
+    display: table;
+}
+.campo{
+    margin-bottom: 16px;
+}
+.campo label{
+    margin-bottom: 3px;
+    color: #000;
+    display: block;
+    
+}
+fieldset.grupo .campo{
+    float: left;
+    margin-right: 16px;
+}
+.campo input[type='text'],
+.campo input[type='email'],
+.campo select,
+.campo textarea{
+    padding:3px;
+    border: 2px solid #000;
+    display: block;
+    box-shadow: 2px 2px 2px rgba(204,204,204,0.2);   
+}
+.campo select option{
+    padding-right: 16px;
+}
+.campo input:focus,
+.campo select:focus,
+.campo textArea:focus{
+    background-color: #fff;
+} 
+    
+.campo label.checkbox{
+    color: #000;
+    display: inline-block;
+    margin-right:16px;
+}
+.botao{
+    font-size: 24px;
+    background-color: #FFF;
+    border:0;
+    margin-bottom: 16px;
+    color: #9A0606;
+    padding: 3px 9px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0,0.5);    
+}
+.botao:hover{
+    background-color: #000;
+    text-shadow:none;
+    box-shadow: inset 2px 2px 2px rgba (0,0,0,0.2);
+}
+.botao,select,label.checkbox{
+    cursor: pointer;
+}
+#textoRodape{
+    position: relative;
+    padding-top: 20px;
+    width: 300px;
+    height: 60px;
+    margin: 10px auto;
+    text-align: center;
+    float: right;
+    margin-right: 640px;
+    font-family: 'Lato', sans-serif;
+}
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
